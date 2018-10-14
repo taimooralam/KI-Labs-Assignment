@@ -18,7 +18,7 @@ with body as:
 ```
 _for CRUD queries on the microservices `candidates/` and `interviewers/`, have a look at the postman collection_
 
-
+All the models in are stored  in `app/models/` folder. The `app.js` is the main file that runs every microservices. The mongoose URL is given at beginning of each relevant `app.js` file.
 
 ## To get started.
 Install Nodejs ([download](https://nodejs.org/en/download/)[Installation on Windows](https://blog.teamtreehouse.com/install-node-js-npm-windows), [Installation on Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac),  and [MongoDB](https://www.mongodb.com/download-center?initial=true#community). As well as [Mongo3T](https://robomongo.org) for data inspection and importing using GUI, [Postman](https://www.getpostman.com)for calling REST APIs.
