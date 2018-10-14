@@ -21,10 +21,11 @@ _for CRUD queries on the microservices `candidates/` and `interviewers/`, have a
 
 
 ## To get started.
-Install Nodejs ([download](https://nodejs.org/en/download/)[Installation on Windows](https://blog.teamtreehouse.com/install-node-js-npm-windows), [Installation on Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac),  and [MongoDB]((https://www.mongodb.com/download-center?initial=true#community). As well as [Mongo3T]((https://robomongo.org) for data inspection and importing using GUI, [Postman](https://www.getpostman.com)for calling REST APIs.
-Import `data/candidates.json` and `data/interviewers.json` in mongo database(https://docs.mongodb.com/guides/server/import/).
+Install Nodejs ([download](https://nodejs.org/en/download/)[Installation on Windows](https://blog.teamtreehouse.com/install-node-js-npm-windows), [Installation on Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac),  and [MongoDB](https://www.mongodb.com/download-center?initial=true#community). As well as [Mongo3T](https://robomongo.org) for data inspection and importing using GUI, [Postman](https://www.getpostman.com)for calling REST APIs.
 
-Import the postman collections in Postman to run the microservices.
+[Import](https://docs.mongodb.com/guides/server/import/) `data/candidates.json` and `data/interviewers.json` in mongo database.
+
+Import the postman collections (`Ki Labs.postman_collection.json`) in Postman to run the microservices.
 
 Change the mongoose URLs in `candidate/app.js` and `interviewer/app.js` to point to your database where you have imported the data.
 In three separate terminals, go to all the three folders `candidate/`, `interviewer/`, and `interviews/` and run the following commands one after another to install and run the programs.
