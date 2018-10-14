@@ -16,6 +16,11 @@ with body as:
 	"interviewers": ["5bc34d80d66da7632ad8866b", "5bc34de3d66da7632ad88671"]
 }
 ```
+with this query and importing the data in the database, one can run and verify the example scenario of the timeslots of the candidate Carl and the interviewers Philip and Sarah given in the assignment.
+
+All time stamps are stored and retreived in UTC timestamp.
+The objects are identified by their Mongo Unique identifier in the rest API.
+
 _for CRUD queries on the microservices `candidates/` and `interviewers/`, have a look at the postman collection_
 
 All the models in are stored  in `app/models/` folder. The `app.js` is the main file that runs every microservices. The mongoose URL is given at beginning of each relevant `app.js` file.
