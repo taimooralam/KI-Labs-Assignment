@@ -1,0 +1,36 @@
+{
+	"_id" : ObjectId("5bc34b119ec49f5fcec8d3f7"),
+	"name" : "Carl",
+	"availability" : [
+		{
+			"_id" : ObjectId("5bc34b119ec49f5fcec8d3fd"),
+			"from" : ISODate("2018-11-22T08:00:00Z"),
+			"to" : ISODate("2018-11-22T09:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34b119ec49f5fcec8d3fc"),
+			"from" : ISODate("2018-11-23T08:00:00Z"),
+			"to" : ISODate("2018-11-23T09:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34b119ec49f5fcec8d3fb"),
+			"from" : ISODate("2018-11-24T08:00:00Z"),
+			"to" : ISODate("2018-11-24T09:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34b119ec49f5fcec8d3fa"),
+			"from" : ISODate("2018-11-24T09:00:00Z"),
+			"to" : ISODate("2018-11-24T11:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34b119ec49f5fcec8d3f9"),
+			"from" : ISODate("2018-11-25T08:00:00Z"),
+			"to" : ISODate("2018-11-25T09:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34b119ec49f5fcec8d3f8"),
+			"from" : ISODate("2018-11-26T08:00:00Z"),
+			"to" : ISODate("2018-11-26T09:00:00Z")
+		}
+	]
+}

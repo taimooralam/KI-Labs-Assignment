@@ -1,0 +1,57 @@
+{
+	"_id" : ObjectId("5bc34d80d66da7632ad8866b"),
+	"name" : "Philip",
+	"availability" : [
+		{
+			"_id" : ObjectId("5bc34d80d66da7632ad88670"),
+			"from" : ISODate("2018-11-22T08:00:00Z"),
+			"to" : ISODate("2018-11-22T15:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34d80d66da7632ad8866f"),
+			"from" : ISODate("2018-11-23T08:00:00Z"),
+			"to" : ISODate("2018-11-23T15:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34d80d66da7632ad8866e"),
+			"from" : ISODate("2018-11-24T08:00:00Z"),
+			"to" : ISODate("2018-11-24T15:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34d80d66da7632ad8866d"),
+			"from" : ISODate("2018-11-25T08:00:00Z"),
+			"to" : ISODate("2018-11-25T15:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34d80d66da7632ad8866c"),
+			"from" : ISODate("2018-11-26T08:00:00Z"),
+			"to" : ISODate("2018-11-26T15:00:00Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("5bc34de3d66da7632ad88671"),
+	"name" : "Sarah",
+	"availability" : [
+		{
+			"_id" : ObjectId("5bc34de3d66da7632ad88675"),
+			"from" : ISODate("2018-11-22T11:00:00Z"),
+			"to" : ISODate("2018-11-22T17:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34de3d66da7632ad88674"),
+			"from" : ISODate("2018-11-23T08:00:00Z"),
+			"to" : ISODate("2018-11-23T11:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34de3d66da7632ad88673"),
+			"from" : ISODate("2018-11-24T11:00:00Z"),
+			"to" : ISODate("2018-11-24T17:00:00Z")
+		},
+		{
+			"_id" : ObjectId("5bc34de3d66da7632ad88672"),
+			"from" : ISODate("2018-11-25T08:00:00Z"),
+			"to" : ISODate("2018-11-25T11:00:00Z")
+		}
+	]
+}

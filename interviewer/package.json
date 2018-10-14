@@ -1,0 +1,24 @@
+{
+  "name": "interviewer",
+  "version": "1.0.0",
+  "description": "\"A simple interviewer API\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "prod": "nodemon app.js",
+    "dev": "nodemon --inspect app.js",
+    "receive": "node --inspect test_receive.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9"
+  },
+  "author": "Taimoor Alam",
+  "license": "MIT"
+}

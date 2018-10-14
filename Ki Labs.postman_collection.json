@@ -1,0 +1,459 @@
+{
+	"info": {
+		"_postman_id": "8d0d858d-e860-455a-a865-11c96e4de03e",
+		"name": "Ki Labs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Candidate",
+			"item": [
+				{
+					"name": "Get all candidates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8081/api/candidates",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"candidates"
+							]
+						},
+						"description": "localhost:8081/api/candidates"
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new candidate",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "3a45277a-84b4-4568-b66e-bed2ca0a36e2",
+								"exec": [
+									"postman.setEnvironmentVariable('22from_timestamp',new Date(2018, 10, 22, 9, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('22to_timestamp',new Date(2018, 10, 22, 10, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('23from_timestamp',new Date(2018, 10, 22, 9, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('23to_timestamp',new Date(2018, 10, 22, 10, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('24_1from_timestamp',new Date(2018, 10, 22, 9, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('24_1to_timestamp',new Date(2018, 10, 22, 10, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('24_2from_timestamp',new Date(2018, 10, 22, 10, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('24_2to_timestamp',new Date(2018, 10, 22, 12, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('25from_timestamp',new Date(2018, 10, 22, 9, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('25to_timestamp',new Date(2018, 10, 22, 10, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('26from_timestamp',new Date(2018, 10, 22, 9, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('26to_timestamp',new Date(2018, 10, 22, 10, 00, 00, 00).toISOString());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Carl\",\n\t\"availability\": [{ \"from\": \"{{22from_timestamp}}\", \"to\": \"{{22to_timestamp}}\" }, { \"from\": \"{{23from_timestamp}}\", \"to\": \"{{23to_timestamp}}\" }, { \"from\": \"{{24_1from_timestamp}}\", \"to\": \"{{24_1to_timestamp}}\" }, { \"from\": \"{{24_2from_timestamp}}\", \"to\": \"{{24_2to_timestamp}}\" }, { \"from\": \"{{25from_timestamp}}\", \"to\": \"{{25to_timestamp}}\" }, { \"from\": \"{{26from_timestamp}}\", \"to\": \"{{26to_timestamp}}\" }]\n}"
+						},
+						"url": {
+							"raw": "localhost:8081/api/candidates",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"candidates"
+							]
+						},
+						"description": "localhost:8081/api/candidates"
+					},
+					"response": []
+				},
+				{
+					"name": "Get a single candidate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8081/api/candidates/5bc1d00681a73915254d1e40",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"candidates",
+								"5bc1d00681a73915254d1e40"
+							]
+						},
+						"description": "localhost:8081/api/candidates/5bc1d00681a73915254d1e40"
+					},
+					"response": []
+				},
+				{
+					"name": "Update a single candidate",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "10970ec2-53d0-496f-b687-381c62e12928",
+								"exec": [
+									"postman.setEnvironmentVariable('timestamp',(new Date()).toISOString())"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Taimoor Ahmed\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8081/api/candidates/5bc1d00681a73915254d1e40",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"candidates",
+								"5bc1d00681a73915254d1e40"
+							]
+						},
+						"description": "localhost:8081/api/candidates/5bc1d00681a73915254d1e40"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a single candiate",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8081/api/candidates/5bc30381feebb749c231c9cd",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"candidates",
+								"5bc30381feebb749c231c9cd"
+							]
+						},
+						"description": "localhost:8081/api/candidates/5bc1d00681a73915254d1e40"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Interviewer",
+			"item": [
+				{
+					"name": "Get all interviewers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8082/api/interviewers",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"interviewers"
+							]
+						},
+						"description": "localhost:8081/api/candidates"
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new interviewer",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "3a45277a-84b4-4568-b66e-bed2ca0a36e2",
+								"exec": [
+									"postman.setEnvironmentVariable('22from_timestamp',new Date(2018, 10, 22, 12, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('22to_timestamp',new Date(2018, 10, 22, 18, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('23from_timestamp',new Date(2018, 10, 23, 9, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('23to_timestamp',new Date(2018, 10, 23, 12, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('24from_timestamp',new Date(2018, 10, 24, 12, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('24to_timestamp',new Date(2018, 10, 24, 18, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('25from_timestamp',new Date(2018, 10, 25, 9, 00, 00, 00).toISOString());",
+									"postman.setEnvironmentVariable('25to_timestamp',new Date(2018, 10, 25, 12, 00, 00, 00).toISOString());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Philip\",\n\t\"availability\": [{ \"from\": \"{{22from_timestamp}}\", \"to\": \"{{22to_timestamp}}\" }, { \"from\": \"{{23from_timestamp}}\", \"to\": \"{{23to_timestamp}}\" }, { \"from\": \"{{24from_timestamp}}\", \"to\": \"{{24to_timestamp}}\" }, { \"from\": \"{{25from_timestamp}}\", \"to\": \"{{25to_timestamp}}\" }]\n}"
+						},
+						"url": {
+							"raw": "localhost:8082/api/interviewers",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"interviewers"
+							]
+						},
+						"description": "localhost:8081/api/candidates"
+					},
+					"response": []
+				},
+				{
+					"name": "Get a single interviewer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8082/api/interviewers/5bc1d7d58ad3655d807ba932",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"interviewers",
+								"5bc1d7d58ad3655d807ba932"
+							]
+						},
+						"description": "localhost:8081/api/candidates/5bc1d00681a73915254d1e40"
+					},
+					"response": []
+				},
+				{
+					"name": "Update a single interviewer",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "10970ec2-53d0-496f-b687-381c62e12928",
+								"exec": [
+									"postman.setEnvironmentVariable('timestamp',(new Date()).toISOString())"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Taimoor Aslam\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8082/api/interviewers/5bc1d7d58ad3655d807ba932",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"interviewers",
+								"5bc1d7d58ad3655d807ba932"
+							]
+						},
+						"description": "localhost:8081/api/candidates/5bc1d00681a73915254d1e40"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a single interviewer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8082/api/interviewers/5bc1d7d58ad3655d807ba932",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"interviewers",
+								"5bc1d7d58ad3655d807ba932"
+							]
+						},
+						"description": "localhost:8081/api/candidates/5bc1d00681a73915254d1e40"
+					},
+					"response": []
+				},
+				{
+					"name": "Get the availability of a single interviewer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8082/api/interviewers/5bc1d8628ad3655d807ba934/timeslots",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"interviewers",
+								"5bc1d8628ad3655d807ba934",
+								"timeslots"
+							]
+						},
+						"description": "localhost:8081/api/candidates/5bc1cfb90fa163139fc2c2a8/availability"
+					},
+					"response": []
+				},
+				{
+					"name": "Check if a time slot from candidate matches an interviewer timeslot",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8082/api/interviewers/5bc34d80d66da7632ad8866b/availability?from=2018-11-25T08:00:00.000Z&to=2018-11-25T09:00:00.000Z",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"interviewers",
+								"5bc34d80d66da7632ad8866b",
+								"availability"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2018-11-25T08:00:00.000Z"
+								},
+								{
+									"key": "to",
+									"value": "2018-11-25T09:00:00.000Z"
+								}
+							]
+						},
+						"description": "localhost:8082/api/interviewers/5bc1d8628ad3655d807ba934/availability"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Interviews",
+			"item": [
+				{
+					"name": "Query interviews between a particular candidate and interviewers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"candidate\": \"5bc1cfb90fa163139fc2c2a8\",\n\t\"interviewers\": [\"5bc1d8628ad3655d807ba934\", \"5bc20406473efb19e05db269\"]\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/interviews/availability/search",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"interviews",
+								"availability",
+								"search"
+							]
+						},
+						"description": "localhost:8080/api/interviews/availability/search"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
