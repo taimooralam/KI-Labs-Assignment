@@ -9,8 +9,7 @@ install:
   - npm ci
     
 script:
-  - cd candidate
-  - npm run test
+  - npm run --prefix candidate test
   
 notifications:
   email: false
