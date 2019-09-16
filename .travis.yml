@@ -9,7 +9,8 @@ install:
   - npm ci
     
 script:
-  - npm run build
+  - cd candidate
+  - npm run test
   
 notifications:
   email: false
